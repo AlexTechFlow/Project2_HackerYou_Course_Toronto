@@ -1,0 +1,347 @@
+
+/* Border-Box, Clearfix, and Normalize */ 
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* Border-Box, Clearfix, and Normalize  - End*/
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%; 
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Playfair Display', serif;
+}
+
+/* Header Styles */
+header {
+	background-image: url("images/bg-img2.jpg");
+	max-width: 2000px;
+	min-width: 100%;
+	height: 500px;
+	background-color: white;
+	background-size: cover;
+	margin: 0;
+	padding-right: 400px;
+	display: table;
+	top: 0;
+	border: 1px solid gray;
+	text-align: center;
+
+}
+
+h1 {
+	color: #FEFEFE;
+	font-size: 400%;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+
+.more-info-link-white, .header-title { 
+	display: inline-block;
+    padding: 10px;
+    color: #FEFEFE;
+
+}
+
+.header-title {
+	color: #FEFEFE;
+	background-color: #FA5C5D;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Flex Container 1 */ 
+.areas-of-law-practice {
+	background-color: #F6F6EA;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;	
+	max-height: 1000px;
+	padding: 50px;
+}
+
+.areas-of-law-practice div p {
+	text-align: center;
+}
+
+/* Flex Items */
+.areas-of-law-practice img {
+	width: 10%;
+}
+
+
+/* Fonts */
+
+
+.more-info-link-white {
+	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	border: 2px solid #FC5C5E;
+}
+
+.more-info-link-black {
+	color: #46474A;
+	font-size: 16px;
+    font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	border: 2px solid #FC5C5E;
+	display: inline-block;
+	padding: 10px;
+	/* Center Know More Links in Flexbox Container */
+	margin-left: 120px;
+	text-align: center;
+}
+
+.comment-info {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #9C9B99;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21px;
+
+}
+
+.highlight-txt {
+	color: #FA5B61;
+}
+
+.fa-quote-left, .fa-quote-right {
+	color: #FA5C5E;
+}
+
+
+.fa-car, .fa-th-list, .fa-window-close-o, .fa-bell, .fa-google-plus, .fa-facebook, .fa-youtube {
+	color: #FA5C5E;
+
+}
+/* Fonts End*/
+
+
+
+/* Other Sections */
+.intro-quote {
+    text-align: center;
+    padding: 50px;
+    width: 40%;
+    margin: 0 auto;
+    color: #414246;
+}
+
+
+
+/* Top Quote Section */
+.intro-quote {
+	color: #A1A1A1;
+	width: 100%;
+}
+
+.quote-width { 
+	width: 50%;
+	margin: 0 auto;
+	
+}
+
+.intro-quote h2 {
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.intro-quote2 {
+	color: gray;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21px;
+}
+
+.intro-quote3 {
+	color: black;
+	font-weight: bold;
+}
+/* Top Quote Section Ends */
+
+
+/* Practice Section */
+.practice {
+	width: 100%;
+	padding: 100px;
+	color: #434142;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 31px;
+
+}
+
+.practice-nav {
+	float: left;
+	width: 40%;
+}
+
+.practice-info {
+    float: left;
+	width: 60%;
+	padding-bottom: 40px;
+}
+
+.text-indent {
+	line-height: 2em;
+	color: #111111;
+	font-size: 1.1em;
+	text-indent: 1.5em;
+}
+
+.practice p::first-letter {
+	color: #FA5C5E;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+.iPad-image {
+	width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.practice-nav h2, .attorneys h2 {
+		font-family: 'Playfair Display', serif;
+		font-size: 3em;
+
+}
+
+.practice-nav ul {
+	width: 60%;
+	margin-top: 14%;
+	margin-bottom: 17%;
+}
+
+.practice-nav li {
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 2em;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+	vertical-align: top;
+	text-align: center;
+	text-align: left;
+
+}
+
+.practice-nav li a {
+	text-decoration: none;
+	color: gray;
+
+}
+
+.practice-nav li span {
+    margin-bottom: 10px;
+}
+
+
+.image-inner {
+	background-image: url("images/parallax1.jpg");
+	background-repeat: repeat-x;
+	height: 40%;
+	width: 100%;
+}
+
+
+
+/*Quote Section Flex*/
+.quote2 {
+	background: url(images/parallax2.jpg) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;	
+	max-height: 1000px;
+	padding: 50px;
+}
+
+.quote2-item {
+	width: 30%;
+}
+
+.quote2 div p {
+	text-align: center;
+}
+
+.more-info-link-white {
+
+}
+
+.quote2 img {
+	width: 10%;
+}
+
+.white {
+	color: white;
+	font-size: 20px;
+}
+/*Quote Section Ends*/
+
+/*Attorneys*/
+.attorneys {
+	background-color: white;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;	
+	max-height: 1000px;
+	padding: 50px;
+	padding-top: 100px;
+}
+
+.attorneys div p {
+	text-align: center;
+}
+
+.attorneys img {
+	width: 70%;
+}
+
+.a-item {
+	width: 30%;
+}
+
+
+/* Footer */
+.footer-wrapper {
+	background-color: #414246;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+}
+
+.footer-wrapper h3 {
+
+	padding-right: 10%;
+	
+}
